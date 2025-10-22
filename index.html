@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claudio Saponaro - Data Scientist</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Claudio Saponaro">Claudio Saponaro</h1>
+
+          <p class="title">Data Scientist</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:c.saponaro1@yahoo.com" class="contact-link">c.saponaro1@yahoo.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+3923410383" class="contact-link">+39 3923410383</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">Feb 10, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Bari, Italy</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Clausapone" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+         <li class="social-item">
+            <a href="https://www.linkedin.com/in/claudio-saponaro-417049247/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+
+
+        </ul>
+
+          <button
+  id="theme-toggle"
+  aria-label="Toggle tema"
+  onclick="(function(btn){
+    const b = document.body;
+    const isLight = b.classList.toggle('light-mode');
+    btn.textContent = isLight ? '☀️' : '🌙';
+    try { localStorage.setItem('theme', isLight ? 'light' : 'dark'); } catch(e){}
+  })(this)"
+>
+  🌙
+    </button>
+
+          <style>
+              body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tema chiaro */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+          </style>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About me</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about me">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+              I’m a <b>Data Scientist</b> and <b>Machine Learning Engineer</b> currently working at Avvale, based in Milan. My background is rooted in both rigorous analytical thinking and practical problem solving.
+
+I graduated from the <b>Polytechnic University of Bari</b>, where I built a <b>strong foundation</b> in mathematics, statistics, computer foundation - during bachelor -  and then in Machine Learning, Deep Learning, Reccomender Systems, . During my studies, I also had the opportunity to expand my academic and cultural perspective through an experience in Barcelona, which helped me develop an international outlook and a collaborative mindset.
+
+I consider myself more of a <b>mathematician and problem solver</b> rather than a pure coder — I enjoy tackling complex, ambiguous problems and turning data into insight, rather than just writing code for its own sake. That’s exactly why the role of Data Scientist fits me so well: it’s a mix of analytical rigor, creative modeling, and practical engineering that aligns perfectly with the way I think and work.
+
+At Avvale, my work involves developing and deploying machine learning models, optimizing data pipelines, and contributing to scalable backend solutions that support data-driven decision making across different domains.
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Master Thesis</h4>
+
+                <p class="service-item-text">
+                  (...).
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Competition</h4>
+
+                <p class="service-item-text">
+                  Currently taking part to data competition on kaggle about classical ML and geneative AI topics
+                </p>
+              </div>
+            </li>
+
+              <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">English certificate</h4>
+
+                <p class="service-item-text">
+                  Currently studying for earning the IELTS english certificate
+                </p>
+              </div>
+
+
+
+            </li><li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UniCrypto organizer</h4>
+
+                <p class="service-item-text">
+                  Planning the hackaton events in Bari and arranging interactive courses on Blockchain and Web3 topics
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">ML implementation</h4>
+
+                <p class="service-item-text">
+                  Implementing a RAG system to help a LLM model to choose which industrial product to use for a specific esigence.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Tennis teacher</h4>
+
+                <p class="service-item-text">
+                  I make high-quality lessons for who want to learn tennis , FITP certification is needed.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!-- per ora tengo il modello è il codice funziona
+
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Polytechnic of Bari</h4>
+
+              <span>2023-2025</span>
+
+              <p class="timeline-text">
+                Foundation of Machine Learning, Deep Learning, Statistical Methods for AI, Reccomender Systems,
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Polytechnic of Barcelona - Erasmus Program</h4>
+
+              <span>February 2025 — July 2025</span>
+
+              <p class="timeline-text">
+               inserire i corsi e gli esami fatti
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Polytechnic of Bari</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                Bacherlor inserire gli esami fatti
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Scientist</h4>
+
+              <span>Sept 2025 — Present</span>
+
+              <p class="timeline-text">
+                Currently developing a RAG system for a client to help select industrial manifacture offer given the esigence of the client
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">UniCrypto co-founder</h4>
+
+              <span>2022 — 2025</span>
+
+              <p class="timeline-text">
+                Co-founding with 3 collegues of the Polytechnic of Bari this association to help people going deeper blockchain and web3 if interested, currently arraning hackatons currently collaborating with Rome university la Sapienza , and organizing hackatons in Bari.
+
+                  <a href="https://www.linkedin.com/company/unicrypto/posts/?feedView=all" style="color: #c5a24b;">UniCrypto</a>.
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="30">30%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">GenAI</h5>
+                <data value="80">80%</data>
+              </div>
+
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+              <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Problem Solving</h5>
+                <data value="80">60</data>
+              </div>
+
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+          <div style="display: flex; justify-content: center; margin-top: 2rem;">
+            <a href="assets/pdfs/claudio_saponarù.pdf" class="repo-button" download>
+        <ion-icon name="download-outline"></ion-icon>
+      Download Resume (PDF)
+    </a>
+       <head>
+  ...
+  <style>
+    /* Bottone Download Resume */
+    .repo-button {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: #24292f;
+      color: #fff;
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .repo-button:hover {
+      background-color: #2f363d;
+      transform: translateY(-2px);
+    }
+
+    .repo-button:active {
+      transform: translateY(0);
+      box-shadow: 0 0 0.2rem rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+  </div>
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Uni</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Hackathon</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Kaggle Competition</button>
+            </li>
+
+              <!--
+              fixed the button connection
+              -->
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Uni</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Hackathon</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Kaggle Competition</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="uni">
+              <a href="projects/project.GCN.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/GCN.jpg" alt="GCN" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Political Blogs classification using Graph Convolutional Networks</h3>
+                  <!-- quando clicco sul progetto voglio che che mi riporti a una schermata nested con il pdf
+                  -->
+
+                <p class="project-category">uni</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="uni">
+              <a href="projects/projectFormalLamguage.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/RAG.jpg" alt="formal" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Managing warehouse logistics through natural language processing</h3>
+
+                <p class="project-category">Python, OWL, Ollama, Protege</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="uni">
+              <a href="projects/projectSoftware.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/onto2vec.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ontology driven machine learning tasks enhancing</h3>
+
+                <p class="project-category">Python, OWL, PyTorch, Pandas, </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="uni">
+              <a href="projects/projectOliveTrees.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/olive_trees.jpg" alt="matlab" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Olive trees species recognition using machine learning using machine learning algorithms</h3>
+
+                <p class="project-category">Matlab</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="uni">
+                <a href="projects/project.checkstyle.html">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+
+                  </div>
+
+                  <img src="./assets/images/checkstyle.jpg" alt="dsm." loading="lazy">
+
+                </figure>
+
+                <h3 class="project-title">Generating a checkstyle using a LLM</h3>
+
+                <p class="project-category">Python, LLM, Java</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="hackathon">
+              <a href="projects/projectRandastad.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Randstad Hackathon</h3>
+
+                <p class="project-category">Python, Tensorflow, Pandas, Sklearn, Jupyter</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="uni">
+              <a href="projects/projectsMLCQD.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/stock_market.png" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Predicting Stock Market CNN-LSTM model</h3>
+
+                <p class="project-category">Python, Pytorch, Pandas, Sklearn</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="uni">
+              <a href="projects/projectMultiagent.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/2APL.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">2APL : MultiAgent system design</h3>
+
+                <p class="project-category">Prolog, Java</p>
+
+              </a>
+            </li>
+
+                  <li class="project-item  active" data-filter-item data-category="uni">
+                  <a href="projects/projectDeepQueue.html">
+
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+
+                      <img src="./assets/images/deepqueuenet.png" alt="formal" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">Reproducibility of the DeepQueueNet algorithm</h3>
+
+                    <p class="project-category">Python, Tensorflow, Pandas, Sklearn, Numpy </p>
+
+                  </a>
+                </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48096.92054384669!2d16.840880893777634!3d41.111434530342585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e8f8f3078d6f%3A0x87254066a3908e1!2sBari%20BA!5e0!3m2!1sit!2sit!4v1760963714315!5m2!1sit!2sit"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
