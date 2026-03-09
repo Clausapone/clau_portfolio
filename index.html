@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!--
+TODO : add the thesis part
+
+-->
+
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -133,7 +140,7 @@
             </a>
           </li>
 
-         <li class="social-item">
+          <li class="social-item">
             <a href="https://www.linkedin.com/in/claudio-saponaro-417049247/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
@@ -143,32 +150,28 @@
 
         </ul>
 
-          <button
-  id="theme-toggle"
-  aria-label="Toggle tema"
-  onclick="(function(btn){
+        <button id="theme-toggle" aria-label="Toggle tema" onclick="(function(btn){
     const b = document.body;
     const isLight = b.classList.toggle('light-mode');
     btn.textContent = isLight ? '☀️' : '🌙';
     try { localStorage.setItem('theme', isLight ? 'light' : 'dark'); } catch(e){}
-  })(this)"
->
-  🌙
-    </button>
+  })(this)">
+          🌙
+        </button>
 
-          <style>
-              body {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+        <style>
+          body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+          }
 
-/* Tema chiaro */
-body.light-mode {
-  background-color: #ffffff;
-  color: #000000;
-}
-          </style>
+          /* Tema chiaro */
+          body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+          }
+        </style>
 
       </div>
 
@@ -222,13 +225,23 @@ body.light-mode {
 
         <section class="about-text">
           <p>
-              I’m a <b>Data Scientist</b> and <b>Machine Learning Engineer</b> currently working at Avvale, based in Milan. My background is rooted in both rigorous analytical thinking and practical problem solving.
+            I’m a <b>Data Scientist</b> and <b>Machine Learning Engineer</b> currently working at Avvale, based in
+            Milan. My background is rooted in both rigorous analytical thinking and practical problem solving.
 
-I graduated from the <b>Polytechnic University of Bari</b>, where I built a <b>strong foundation</b> in mathematics, statistics, computer foundation - during bachelor -  and then in Machine Learning, Deep Learning, Reccomender Systems, . During my studies, I also had the opportunity to expand my academic and cultural perspective through an experience in Barcelona, which helped me develop an international outlook and a collaborative mindset.
+            I graduated from the <b>Polytechnic University of Bari</b>, where I built a <b>strong foundation</b> in
+            mathematics, statistics, computer foundation - during bachelor - and then in Machine Learning, Deep
+            Learning, Reccomender Systems, . During my studies, I also had the opportunity to expand my academic and
+            cultural perspective through an experience in Barcelona, which helped me develop an international outlook
+            and a collaborative mindset.
 
-I consider myself more of a <b>mathematician and problem solver</b> rather than a pure coder — I enjoy tackling complex, ambiguous problems and turning data into insight, rather than just writing code for its own sake. That’s exactly why the role of Data Scientist fits me so well: it’s a mix of analytical rigor, creative modeling, and practical engineering that aligns perfectly with the way I think and work.
+            I consider myself more of a <b>mathematician and problem solver</b> rather than a pure coder — I enjoy
+            tackling complex, ambiguous problems and turning data into insight, rather than just writing code for its
+            own sake. That’s exactly why the role of Data Scientist fits me so well: it’s a mix of analytical rigor,
+            creative modeling, and practical engineering that aligns perfectly with the way I think and work.
 
-At Avvale, my work involves developing and deploying machine learning models, optimizing data pipelines, and contributing to scalable backend solutions that support data-driven decision making across different domains.
+            At Avvale, my work involves developing and deploying machine learning models, optimizing data pipelines, and
+            contributing to scalable backend solutions that support data-driven decision making across different
+            domains.
           </p>
 
         </section>
@@ -276,7 +289,7 @@ At Avvale, my work involves developing and deploying machine learning models, op
               </div>
             </li>
 
-              <li class="service-item">
+            <li class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
@@ -292,7 +305,8 @@ At Avvale, my work involves developing and deploying machine learning models, op
 
 
 
-            </li><li class="service-item">
+            </li>
+            <li class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
@@ -317,7 +331,8 @@ At Avvale, my work involves developing and deploying machine learning models, op
                 <h4 class="h4 service-item-title">ML implementation</h4>
 
                 <p class="service-item-text">
-                  Implementing a RAG system to help a LLM model to choose which industrial product to use for a specific esigence.
+                  Implementing a RAG system to help a LLM model to choose which industrial product to use for a specific
+                  esigence.
                 </p>
               </div>
 
@@ -442,7 +457,7 @@ At Avvale, my work involves developing and deploying machine learning models, op
               <span>February 2025 — July 2025</span>
 
               <p class="timeline-text">
-               inserire i corsi e gli esami fatti
+                inserire i corsi e gli esami fatti
               </p>
 
             </li>
@@ -482,7 +497,8 @@ At Avvale, my work involves developing and deploying machine learning models, op
               <span>Sept 2025 — Present</span>
 
               <p class="timeline-text">
-                Currently developing a RAG system for a client to help select industrial manifacture offer given the esigence of the client
+                Currently developing a RAG system for a client to help select industrial manifacture offer given the
+                esigence of the client
 
               </p>
 
@@ -495,12 +511,49 @@ At Avvale, my work involves developing and deploying machine learning models, op
               <span>2022 — 2025</span>
 
               <p class="timeline-text">
-                Co-founding with 3 collegues of the Polytechnic of Bari this association to help people going deeper blockchain and web3 if interested, currently arraning hackatons currently collaborating with Rome university la Sapienza , and organizing hackatons in Bari.
+                Co-founding with 3 collegues of the Polytechnic of Bari this association to help people going deeper
+                blockchain and web3 if interested, currently arraning hackatons currently collaborating with Rome
+                university la Sapienza , and organizing hackatons in Bari.
 
-                  <a href="https://www.linkedin.com/company/unicrypto/posts/?feedView=all" style="color: #c5a24b;">UniCrypto</a>.
+                <a href="https://www.linkedin.com/company/unicrypto/posts/?feedView=all"
+                  style="color: #c5a24b;">UniCrypto</a>.
               </p>
 
             </li>
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ideathon Deloitte</h4>
+
+              <span>September 2024</span>
+
+              <p class="timeline-text">
+                Co-founding with 3 collegues of the Polytechnic of Bari this association to help people going deeper
+                blockchain and web3 if interested, currently arraning hackatons currently collaborating with Rome
+                university la Sapienza , and organizing hackatons in Bari.
+
+                <a href="https://www.linkedin.com/company/unicrypto/posts/?feedView=all"
+                  style="color: #c5a24b;">UniCrypto</a>.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Hackaton Randastad Tecnhologies</h4>
+
+              <span>May 2024</span>
+
+              <p class="timeline-text">
+                Co-founding with 3 collegues of the Polytechnic of Bari this association to help people going deeper
+                blockchain and web3 if interested, currently arraning hackatons currently collaborating with Rome
+                university la Sapienza , and organizing hackatons in Bari.
+
+                <a href="https://www.linkedin.com/company/unicrypto/posts/?feedView=all"
+                  style="color: #c5a24b;">UniCrypto</a>.
+              </p>
+            </li>
+
           </ol>
 
         </section>
@@ -566,7 +619,7 @@ At Avvale, my work involves developing and deploying machine learning models, op
 
             </li>
 
-              <li class="skills-item">
+            <li class="skills-item">
 
               <div class="title-wrapper">
                 <h5 class="h5">Problem Solving</h5>
@@ -583,44 +636,45 @@ At Avvale, my work involves developing and deploying machine learning models, op
           </ul>
 
         </section>
-          <div style="display: flex; justify-content: center; margin-top: 2rem;">
-            <a href="assets/pdfs/claudio_saponarù.pdf" class="repo-button" download>
-        <ion-icon name="download-outline"></ion-icon>
-      Download Resume (PDF)
-    </a>
-       <head>
-  ...
-  <style>
-    /* Bottone Download Resume */
-    .repo-button {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      background-color: #24292f;
-      color: #fff;
-      padding: 0.6rem 1rem;
-      border: none;
-      border-radius: 0.5rem;
-      font-size: 0.9rem;
-      font-weight: 500;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
+        <div style="display: flex; justify-content: center; margin-top: 2rem;">
+          <a href="assets/pdfs/claudio_saponaro.pdf" class="repo-button" download>
+            <ion-icon name="download-outline"></ion-icon>
+            Download Resume (PDF)
+          </a>
 
-    .repo-button:hover {
-      background-color: #2f363d;
-      transform: translateY(-2px);
-    }
+          <head>
 
-    .repo-button:active {
-      transform: translateY(0);
-      box-shadow: 0 0 0.2rem rgba(0,0,0,0.3);
-    }
-  </style>
-</head>
+            <style>
+              /* Bottone Download Resume */
+              .repo-button {
+                display: flex;
+                align-items: center;
+                gap: 0.4rem;
+                background-color: #24292f;
+                color: #fff;
+                padding: 0.6rem 1rem;
+                border: none;
+                border-radius: 0.5rem;
+                font-size: 0.9rem;
+                font-weight: 500;
+                cursor: pointer;
+                text-decoration: none;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+              }
 
-  </div>
+              .repo-button:hover {
+                background-color: #2f363d;
+                transform: translateY(-2px);
+              }
+
+              .repo-button:active {
+                transform: translateY(0);
+                box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3);
+              }
+            </style>
+          </head>
+
+        </div>
 
       </article>
 
@@ -655,7 +709,11 @@ At Avvale, my work involves developing and deploying machine learning models, op
               <button data-filter-btn>Kaggle Competition</button>
             </li>
 
-              <!--
+            <li class="filter-item">
+              <button data-filter-btn>Work</button>
+            </li>
+
+            <!--
               fixed the button connection
               -->
 
@@ -709,10 +767,11 @@ At Avvale, my work involves developing and deploying machine learning models, op
                 </figure>
 
                 <h3 class="project-title">Political Blogs classification using Graph Convolutional Networks</h3>
-                  <!-- quando clicco sul progetto voglio che che mi riporti a una schermata nested con il pdf
+                <!-- quando clicco sul progetto voglio che che mi riporti a una schermata nested con il pdf
                   -->
 
-                <p class="project-category">uni</p>
+                <p class="project-category">Python, Pytorch, PyTorch Geometric, Graph Machine Learning, Sklearn, Pandas,
+                  Matplotlib</p>
 
               </a>
             </li>
@@ -730,7 +789,7 @@ At Avvale, my work involves developing and deploying machine learning models, op
 
                 <h3 class="project-title">Managing warehouse logistics through natural language processing</h3>
 
-                <p class="project-category">Python, OWL, Ollama, Protege</p>
+                <p class="project-category">Python, OWL, Ollama, Protege, RAG, LLM</p>
 
               </a>
             </li>
@@ -764,7 +823,8 @@ At Avvale, my work involves developing and deploying machine learning models, op
                   <img src="./assets/images/olive_trees.jpg" alt="matlab" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Olive trees species recognition using machine learning using machine learning algorithms</h3>
+                <h3 class="project-title">Olive trees species recognition using machine learning using machine learning
+                  algorithms</h3>
 
                 <p class="project-category">Matlab</p>
 
@@ -772,7 +832,7 @@ At Avvale, my work involves developing and deploying machine learning models, op
             </li>
 
             <li class="project-item  active" data-filter-item data-category="uni">
-                <a href="projects/project.checkstyle.html">
+              <a href="projects/project.checkstyle.html">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -845,23 +905,45 @@ At Avvale, my work involves developing and deploying machine learning models, op
               </a>
             </li>
 
-                  <li class="project-item  active" data-filter-item data-category="uni">
-                  <a href="projects/projectDeepQueue.html">
+            <li class="project-item  active" data-filter-item data-category="uni">
+              <a href="projects/projectDeepQueue.html">
 
-                    <figure class="project-img">
-                      <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </div>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-                      <img src="./assets/images/deepqueuenet.png" alt="formal" loading="lazy">
-                    </figure>
+                  <img src="./assets/images/deepqueuenet.png" alt="formal" loading="lazy">
+                </figure>
 
-                    <h3 class="project-title">Reproducibility of the DeepQueueNet algorithm</h3>
+                <h3 class="project-title">DeepQueueNet reproducibility: A Two-Phase
+                  Experimental Approach</h3>
 
-                    <p class="project-category">Python, Tensorflow, Pandas, Sklearn, Numpy </p>
+                <p class="project-category">Python, Tensorflow, Pandas, Sklearn, Numpy </p>
 
-                  </a>
-                </li>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="work">
+              <a href="projects/projectMADE.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/MADE.png" alt="MADE" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MADE : Innovation for companies guided by companies</h3>
+                <!-- quando clicco sul progetto voglio che che mi riporti a una schermata nested con il pdf
+                  -->
+
+                <p class="project-category">Python, Azure Cognitive Search, Azure DB, Azure Document Intelligence ,
+                  Azure Open AI, LLM, RAG</p>
+
+              </a>
+            </li>
 
           </ul>
 
